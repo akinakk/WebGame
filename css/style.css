@@ -1,0 +1,318 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    animation: gradientAnimation 30s ease infinite;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+}
+
+.main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-80%, -70%);
+}
+
+span {
+    color: rgb(47, 255, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.gameInfo {
+    position: absolute;
+    width: 400px;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.line {
+    background-color: aliceblue;
+    box-shadow: 0 0px 10px rgb(255, 255, 255);
+    width: 1000px;
+}
+
+.container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(242, 0, 255, 0.068);
+    border-radius: 2px;
+    height: 140px;
+    box-shadow: 0 0px 30px rgba(37, 0, 48, 0.612);
+}
+
+button {
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    background-color: #3d0046;
+    width: 60%;
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(47, 255, 0);
+    transform: scale(1.1);
+}
+
+
+.sidepanel {
+    position: fixed;
+    height: 1000px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidepanel__divider {
+    width: 1px;
+    height: 400px;
+    background-color: #ffffff
+}
+
+.sidepanel__icon img {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.sidepanel__divider2 {
+    width: 1px;
+    height: 1000px;
+    background-color: #ffffff
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-color: #0a0016;
+    }
+
+    45% {
+        background-color: #0d0524;
+    }
+
+    75% {
+        background-color: #230028;
+    }
+
+    100% {
+        background-color: #0c001b;
+    }
+}
+
+@media (max-width: 1700px) {
+    .main {
+        transform: translate(-70%, -80%);
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .container {
+        height: 140px;
+    }
+}
+
+@media (max-width: 1500px) {
+    button {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .main {
+        font-size: 18px;
+        text-align: center;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        font-size: 17px;
+        height: 110px;
+    }
+
+    .gameInfo {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 170px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    button {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .main {
+        font-size: 18px;
+        text-align: center;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 900px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .container {
+        font-size: 16px;
+        height: 110px;
+    }
+
+    .gameInfo {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .line {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    button {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .main {
+        font-size: 18px;
+        text-align: center;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        font-size: 16px;
+        height: 110px;
+        justify-content: space-around;
+    }
+
+    .gameInfo {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .sidepanel__divider,
+    .sidepanel__divider2 {
+        display: none;
+    }
+
+    .sidepanel {
+        position: fixed;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main {
+        font-size: 18px;
+        text-align: center;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .container {
+        font-size: 14px;
+        height: 120px;
+    }
+
+    .gameInfo {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .sidepanel__divider,
+    .sidepanel__divider2 {
+        display: none;
+    }
+
+    .sidepanel {
+        position: fixed;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./css/styleGame.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="gameTitle">
+            <h1>Drag And Drop!</h1>
+        </div>
+    </header>
+
+    <div id="complete">
+        <!-- Response after completion -->
+    </div>
+
+    <div class="container">
+        <!-- Container for questions -->
+        <div class="questions" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <!-- Questions will be added via JS -->
+        </div>
+
+        <!-- Container for answers -->
+        <div class="answersContainer">
+            <div class="answers">
+                <!-- Answers will be added via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Button for reset -->
+    <div class="buttonContainer">
+        <button class="resetButton">Click to Reset</button>
+    </div>
+
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/artemi-baburin-6628692a1/">
+            <img src="./img/linkedin.png">
+        </a>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
