@@ -1,1 +1,1 @@
-Visit my game: https://jaitsa.github.io/WebGame/
+Visit my game: https://akinakk.github.io/WebGame/
